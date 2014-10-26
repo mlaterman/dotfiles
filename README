@@ -1,0 +1,6 @@
+Arch dotfiles, possibly incomplete list of packages needed below
+
+Packages needed: i3-wm i3lock i3status urxvt numix-themes vim gtk-chtheme ttf-dejavu
+
+AUR: pacakge-query yaourt numix-icon-theme-git
+

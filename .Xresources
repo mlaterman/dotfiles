@@ -1,0 +1,43 @@
+! blacks (dark,light)
+*color0:#393939
+*color8:#595959
+! reds
+*color1:#be2422
+*color9:#be2422
+! greens
+*color2:#228c4a
+*color10:#228c4a
+! yellows
+*color3:#8c7f22
+*color11:#8c7f22
+! blues
+*color4:#2267a5
+*color12:#2267a5
+! magentas
+*color5:#8a65aa
+*color13:#8a65aa
+! cyans
+*color6:#2267a5
+*color14:#2267a5
+! whites
+*color7:#C8B55B
+*color15:#E4DC8C
+
+URxvt*background:[80]#171717
+URxvt*foreground:#FFFFCC
+URxvt*cursorColor:#2267b5
+URxvt*colorbd:#FFFFCC
+
+URxvt*depth:32
+URxvt*scrollBar:false
+URxvt*internalBorder:2
+URxvt*externalBorder:2
+
+*font:xft:DejaVu Sans Mono:size=12
+!*font: -misc-fixed-medium-r-normal--13-100-*-*-*-*-*-*
+
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select,matcher,selection-to-clipboard
+URxvt.url-select.launcher: chromium
+URxvt.url-select.underline: true
+URxvt.matcher.button: 1
+URxvt.colorUL: #4682B4

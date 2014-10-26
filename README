@@ -1,6 +1,8 @@
 Arch dotfiles, possibly incomplete list of packages needed below
 
-Packages needed: i3-wm i3lock i3status urxvt numix-themes vim gtk-chtheme ttf-dejavu
+Need to enable services for: asus-kbd-backlight
 
-AUR: pacakge-query yaourt numix-icon-theme-git
+Packages needed: i3-wm i3lock i3status urxvt numix-themes vim gtk-chtheme ttf-dejavu xorg-xbacklight gnome-alsamixer
+
+AUR: pacakge-query yaourt numix-icon-theme-git asus-kbd-backlight
 

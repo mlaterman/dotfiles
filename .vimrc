@@ -1,18 +1,21 @@
 "Strip whitespace out of file on save
+filetype off
+call pathogen#infect()
+call pathogen#helptags()
+filetype plugin indent on
+syntax on
+
 autocmd BufRead,BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
 set nocompatible
 set showcmd
 
-filetype on
-filetype plugin on
 syntax enable
 set number
 
 " Tab stuff
 set autoindent
 set smarttab
-set expandtab
 set shiftwidth=4
 set softtabstop=4
 
@@ -36,8 +39,7 @@ set mat=3
 
 set laststatus=2
 
-filetype plugin indent on
-syntax on
-execute pathogen#infect()
+nmap <F8> :TagbarToggle
 
-"nmap <F8>:TagbarToggle
+autocmd BufRead,BufNewFile *.erl,*.es.*.hrl,*.yaws,*.xrl set expandtab
+au BufNewFile,BufRead *.erl,*.es,*.hrl,*.yaws,*.xrl setf erlang

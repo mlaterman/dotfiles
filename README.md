@@ -25,6 +25,7 @@ brew install pyenv
 
 * (Optional) [go](https://go.dev)
 * (Optional) [gopls](https://go.dev/gopls/)
+* (Optional) [tree-sitter-cli](https://github.com/tree-sitter/tree-sitter/blob/master/crates/cli/README.md)
 
 ## neovim
 

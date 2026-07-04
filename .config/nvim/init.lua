@@ -75,9 +75,20 @@ require('go').setup()
 -- lualine config
 require('lualine').setup({
     options = {
-	    theme = 'codedark'
+	    theme = 'solarized_dark'
     }
 })
 
 -- nvim-autopairs config
 require('nvim-autopairs').setup()
+
+-- nvim-treesitter config
+require('nvim-treesitter').setup({
+  install_dir = vim.fn.stdpath('data') .. '/site',
+})
+require('nvim-treesitter').install({ 'go', 'gomod', 'gosum', 'gotmpl', 'gowork', 'python' })
+
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { '*' },
+  callback = function() vim.treesitter.start() end,
+})

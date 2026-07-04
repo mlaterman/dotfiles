@@ -67,21 +67,15 @@ vim.api.nvim_create_autocmd('FileType', {
 })
 
 -- lsp config
-vim.lsp.config('gopls', {
-    settings = {
-	gopls = {}
-    }
-})
+vim.lsp.enable('gopls')
 
 -- go.nvim config
-require('go').setup({
-    lsp_cfg = true
-})
+require('go').setup()
 
 -- lualine config
 require('lualine').setup({
     options = {
-	theme = 'codedark'
+	    theme = 'codedark'
     }
 })
 

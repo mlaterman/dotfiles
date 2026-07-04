@@ -1,20 +1,19 @@
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=10000
-setopt appendhistory
-setopt share_history
-unsetopt beep
-bindkey -e
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '/home/laterman/.zshrc'
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="awesomepanda"
 
-autoload -U compinit promptinit
-compinit
-promptinit
-# End of lines added by compinstall
+plugins=(git)
 
-export TERM=rxvt
-export EDITOR="vim"
-prompt redhat
+source $ZSH/oh-my-zsh.sh
+
+export EDITOR="nvim"
+
+# pyenv config
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+
+# add go/bin to path
+export PATH=$PATH:$(go env GOPATH)/bin
+
+# aliases
+alias vim=nvim
